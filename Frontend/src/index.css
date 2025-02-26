@@ -1,0 +1,13 @@
+*{
+  box-sizing: border-box; 
+  font-family: "Montserrat", serif;
+  outline: none;
+  border: none;
+}
+
+body{
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #33394c;
+}

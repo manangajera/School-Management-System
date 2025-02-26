@@ -1,0 +1,333 @@
+/* ------------------- Global Scrollbar Hiding ------------------- */
+/* For Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+* {
+    -ms-overflow-style: auto;  /* IE and Edge */
+    scrollbar-width: auto;     /* Firefox */
+}
+
+
+/* ------------------- Error Page ------------------- */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .error-container h1 {
+    font-size: 2.5rem;
+    color: #dc3545;
+  }
+  
+  .error-container h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  
+  .error-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .back-home {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-home:hover {
+    background-color: #0056b3;
+  }
+  
+/* ------------------- Signup & Login ------------------- */
+.signup-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f7fB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevents any scrolling */
+}
+
+.signup-box {
+    width: 80%;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden; /* No scrollbar even if content overflows */
+}
+
+.signup-left {
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-left-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.signup-left-para {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.signup-right {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.signup-form {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-form input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #a1a1a1;
+}
+.signup-form select {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #a1a1a1;
+}
+.signup-form button {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #a1a1a1;
+    background-color: #000;
+    color: #fff;
+}
+
+.profile-image {
+    height: 100px;
+}
+
+.image-preview {
+    position: relative;
+    display: inline-block;
+}
+
+.remove-image-icon {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff4444;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.remove-image-icon:hover {
+    background-color: #cc0000;
+}
+
+/* ------------------- Dashboard ------------------- */
+.dashboard-main-container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #cebef3, #cecbcb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.dashboard-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav-container {
+    width: 20%;
+    height: 100vh;
+    background-color:  #1764d7;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.main-container {
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.top-bar {
+    width: 100%;
+    height: 9vh;
+    background-color: #168ed8;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.logo-container {
+    width: 80px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-name {
+    font-weight: 600;
+    color: #fff;
+}
+
+.logout-btn {
+    background-color: #fff;
+    font-weight: 600;
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+/* ------------------- SideNav ------------------- */
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 9vh;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.brand-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* ------------------- Menu ------------------- */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.menu-link {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none; 
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.menu-link.active {
+    background-color: #dcd4d4;
+    color: #000;
+}
+
+.menu-link:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.fa-solid {
+    margin-right: 10px !important;
+}
+
+.contact-us {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-us-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-us-icons { 
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contact-us-icons .contact-us-link {
+    color: #fff;
+    font-size: 20px;
+}
+
+/* ------------------- Outlets ------------------- */
+.outlet-area {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+}
